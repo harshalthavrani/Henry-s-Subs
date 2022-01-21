@@ -1,0 +1,65 @@
+<!-- Name: Harshal Thavrani
+Student #: 8733610
+Section  : 3
+Date     : 2/8/2021 -->
+
+<!-- Including Header -->
+<%- include('header'); -%>
+<!-- Creating Division -->
+<div style="background:white;border:1px solid black; position: absolute; padding-right: 50px; padding-left: 20px; margin-left: 460px;">
+<!-- Declaring Form -->
+    <form action="/index" method="POST" name="indexmenu" onsubmit="return validate()">
+        <!-- Shows the Errors -->
+    <span id="errors" style="color: red;"></span>
+    <!-- Creating Labels and Text Fields -->
+    <p>Name* :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input name="name" type="text" id="name" /></p>
+    
+    <p>Email* :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input name="email" type="text" id="email"/></p>
+    
+    <p>Phone* :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input name="phone" type="text" id="phone" placeholder="999-999-9999" /></p>
+    
+    <p>Address* :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input name="address" type="text" id="address"/></p>
+    
+    <p>City* :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input name="city" type="text" id="city"/></p>
+    
+    <p>Postal Code* :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input name="postcode" type="text" placeholder="X9X 9X9" id="postcode"/></p>
+    <!-- Creating Drop Down List -->
+    <p>Province* :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <select name="province" id="province">
+            <option selected="selected" value="Alberta">Alberta</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="Nova Scotia">Nova Scotia</option>
+            <option value="Nunavut">Nunavut</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Prince Edward Island">Prince Edward Island</option>
+            <option value="Quebec">Quebec</option>
+            <option value="Saskatchewan">Saskatchewan</option>
+            <option value="Yukon">Yukon</option>
+        </select>
+    </p>
+    <!-- Creating Labels and Text Fields -->
+    <p>Hook &amp; Ladder - $8.50:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input name="hookladder" type="text" id="hookladder"/></p>
+    
+    <p>Steak &amp; Cheese - $10.00:&nbsp; &nbsp; &nbsp;&nbsp;<input name="steak" type="text" id="steak"/></p>
+    
+    <p>Meatball Sub - $7.00&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input name="meatball" type="text" id="meatball"/></p>
+    <!-- Creating Drop Down List -->
+    <p>Delivery Time:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <select name="deliverytime" id="deliverytime">
+            <option selected="selected" value="1 Day">1 Day</option>
+            <option value="2 Days">2 Days</option>
+            <option value="3 Days">3 Days</option>
+            <option value="4 Days">4 Days</option>
+        </select>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+    <!-- Creating Button -->
+    <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input name="PlaceOrder" type="submit" value="PLACE ORDER" /></p>
+    </form>
+    <!-- Form Ends -->
+    </div>
+    <!-- Divison Ends -->
+    <!-- Including Footer -->
+    <%- include('footer'); -%>
